@@ -11,6 +11,10 @@ import singularLogoImg from "../../assets/singular-logo.png";
 import houseLogoImg from "../../assets/house-logo.svg";
 import fibrasulLogoImg from "../../assets/fibrasul-logo.svg";
 
+import pathIconImg from "../../assets/path-icon.svg";
+import gasIconImg from "../../assets/gas-pump-icon.svg";
+import cameraIconImg from "../../assets/video-camera-icon.svg";
+
 export const Home = () => {
   return (
     <>
@@ -130,6 +134,59 @@ export const Home = () => {
             </div>
           </div>
           <div className={styles["data"]}></div>
+        </div>
+      </section>
+
+      <section className={styles.work + " " + styles.container}>
+        <div className={styles.work + " " + styles.content}>
+          <div className={styles["text-section"]}>
+            <h1 className={styles.title}>Como funciona</h1>
+            <h2 className={styles.subtitle}>
+              Entenda como nosso sistema funciona e como podemos te ajudar
+            </h2>
+          </div>
+          <div className={styles.cards}>
+            <div className={styles.card}>
+              <div className={styles["image-box"]}>
+                <img src={pathIconImg} alt="Ícone de rotas" />
+              </div>
+              <h4>Controle de rotas</h4>
+              <p>
+                Com simples cliques você pode acompanhar, e controlar, a rota de
+                seus caminhões, e aproveitar do nosso diferencial: sugestões de
+                rotas em tempo real.
+              </p>
+            </div>
+
+            <div className={styles.separator} />
+
+            <div className={styles.card}>
+              <div className={styles["image-box"]}>
+                <img src={gasIconImg} alt="Ícone de bomba de gasolina" />
+              </div>
+              <h4>Controle de abastecimento</h4>
+              <p>
+                Algum dos seus caminhões ficou sem gasolina no meio do nada?
+                Isso é impossível conosco! Temos diversas soluções para não te
+                deixar na mão quando você mais precisar.
+              </p>
+            </div>
+
+            <div className={styles.separator} />
+
+            <div className={styles.card}>
+              <div className={styles["image-box"]}>
+                <img src={cameraIconImg} alt="Ícone de camera" />
+              </div>
+              <h4>Monitoramento em tempo real</h4>
+              <p>
+                Com nosso sistema de monitoramento em tempo real você pode
+                acompanhar a rota do seu caminhão e saber exatamente onde ele
+                está. Além disso, você pode acompanhar o desempenho do motorista
+                e saber se ele está dirigindo de forma segura.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>
