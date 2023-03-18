@@ -1,0 +1,51 @@
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  background-color: var(--green-500);
+  color: var(--white);
+  font-size: inherit;
+  border-radius: 1rem !important;
+  padding: 1rem 2rem;
+  transition: filter 200ms;
+}
+
+button:hover {
+  filter: brightness(0.8);
+}
+
+.container {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 150rem;
+  margin: auto;
+  display: flex;
+}
+
+/* -- HEADER */
+.header {
+  align-items: center;
+  justify-content: space-between;
+  height: 15vh;
+  padding: 2rem;
+}
+
+.header-nav {
+  display: flex;
+  gap: 5rem;
+  color: var(--gray-400);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.header.content a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+

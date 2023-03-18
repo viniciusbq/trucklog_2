@@ -27,6 +27,7 @@
 a {
   all: unset;
   cursor: pointer;
+  color: inherit;
 }
 
 html {
@@ -34,10 +35,6 @@ html {
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
   font-family: "Red Hat Display", sans-serif;
-}
-
-body {
-  background-color: var(--background);
 }
 
 h1,
