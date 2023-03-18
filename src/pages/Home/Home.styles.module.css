@@ -34,7 +34,6 @@ p {
 
 .title {
   font-size: 4.8rem;
-  font-weight: 700;
   color: var(--green-700);
 }
 
@@ -87,7 +86,6 @@ p {
 
 .intro .text-section h1 {
   font-size: 4.2rem;
-  font-weight: 700;
 }
 
 .intro .text-section p {
@@ -122,7 +120,7 @@ p {
   text-align: center;
 }
 
-.partners-cards {
+.partners .cards {
   width: fit-content;
   display: flex;
   align-items: center;
@@ -130,11 +128,48 @@ p {
   margin: auto;
 }
 
-.partners-card {
+.partners .card {
   max-width: 20rem;
 }
 
-.partners-card img {
+.partners .card img {
   width: 100%;
   object-fit: cover;
+}
+
+/* --Nossos Dados */
+.data.content {
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  text-align: center;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.data.content .cards {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20rem;
+}
+
+.data .cards span {
+  color: var(--green-500);
+}
+
+.data .card{
+  display: flex;
+  flex-direction: column;
+}
+
+.data .card h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6.4rem;
+}
+
+.data .card p {
+  font-size: 2.4rem;
 }

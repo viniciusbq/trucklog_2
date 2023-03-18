@@ -60,23 +60,76 @@ export const Home = () => {
             <h1 className={styles.title}>Parceiros</h1>
             <h2 className={styles.subtitle}>Eles também contam conosco</h2>
           </div>
-          <div className={styles["partners-cards"]}>
-            <div className={styles["partners-card"]}>
-              <img src={taskgoLogoImg} alt="" />
+          <div className={styles.cards}>
+            <div className={styles.card}>
+              <img src={taskgoLogoImg} alt="TaskGo Logo" />
             </div>
-            <div className={styles["partners-card"]}>
-              <img src={dbcLogoImg} alt="" />
+            <div className={styles.card}>
+              <img src={dbcLogoImg} alt="DBC Logo" />
             </div>
-            <div className={styles["partners-card"]}>
-              <img src={singularLogoImg} alt="" />
+            <div className={styles.card}>
+              <img src={singularLogoImg} alt="Singular Logo" />
             </div>
-            <div className={styles["partners-card"]}>
-              <img src={houseLogoImg} alt="" />
+            <div className={styles.card}>
+              <img src={houseLogoImg} alt="House Logo" />
             </div>
-            <div className={styles["partners-card"]}>
-              <img src={fibrasulLogoImg} alt="" />
+            <div className={styles.card}>
+              <img src={fibrasulLogoImg} alt="Fibrasul Logo" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.container}>
+        <div className={styles.data + " " + styles.content}>
+          <div className={styles["text-section"]}>
+            <h1 className={styles.title}>Nossos Dados</h1>
+            <h2 className={styles.subtitle}>
+              Entenda o nosso sucesso representado em números
+            </h2>
+          </div>
+          <div className={styles.cards}>
+            <div className={styles.card}>
+              <h2>
+                <i
+                  className="ph-plus-fill"
+                  title="ícone com um sinal de adição"
+                ></i>
+                <span>200</span>
+                <i className="ph-users" title="ícone representando pessoas"></i>
+              </h2>
+              <p>Clientes Registrados</p>
+            </div>
+            <div className={styles.card}>
+              <h2>
+                <i
+                  className="ph-plus-fill"
+                  title="ícone com um sinal de adição"
+                ></i>
+                <span>10K</span>
+                <i
+                  className="ph-gas-pump"
+                  title="ícone representando um combustível"
+                ></i>
+              </h2>
+              <p>Economizados em Combustível</p>
+            </div>
+            <div className={styles.card}>
+              <h2>
+                <i
+                  className="ph-plus-fill"
+                  title="ícone com um sinal de adição"
+                ></i>
+                <span>200</span>
+                <i
+                  className="ph-money"
+                  title="ícone representando dinheiro"
+                ></i>
+              </h2>
+              <p>Clientes Registrados</p>
+            </div>
+          </div>
+          <div className={styles["data"]}></div>
         </div>
       </section>
     </>
