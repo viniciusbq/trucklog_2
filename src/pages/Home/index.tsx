@@ -1,8 +1,15 @@
 import styles from "./Home.styles.module.css";
 
 import logoImg from "../../assets/truck-log-logo.svg";
-import backgroundObjectImg from "../../assets/bg-item1.svg";
 import notebookManImg from "../../assets/notebook-man.svg";
+import backgroundObjectImg from "../../assets/bg-item1.svg";
+import backgroundWorld from "../../assets/bg-world.svg";
+
+import taskgoLogoImg from "../../assets/taskgo-logo.png";
+import dbcLogoImg from "../../assets/dbc-logo.svg";
+import singularLogoImg from "../../assets/singular-logo.png";
+import houseLogoImg from "../../assets/house-logo.svg";
+import fibrasulLogoImg from "../../assets/fibrasul-logo.svg";
 
 export const Home = () => {
   return (
@@ -38,6 +45,38 @@ export const Home = () => {
             <button>Saiba mais</button>
           </div>
           <img src={notebookManImg} alt="Homem usando Notebook" />
+          <img
+            src={backgroundWorld}
+            className={styles.backgroundObject}
+            alt=""
+            aria-hidden
+          />
+        </div>
+      </section>
+
+      <section className={styles.partners + " " + styles.container}>
+        <div className={styles.partners}>
+          <div className={styles["text-section"]}>
+            <h1 className={styles.title}>Parceiros</h1>
+            <h2 className={styles.subtitle}>Eles também contam conosco</h2>
+          </div>
+          <div className={styles["partners-cards"]}>
+            <div className={styles["partners-card"]}>
+              <img src={taskgoLogoImg} alt="" />
+            </div>
+            <div className={styles["partners-card"]}>
+              <img src={dbcLogoImg} alt="" />
+            </div>
+            <div className={styles["partners-card"]}>
+              <img src={singularLogoImg} alt="" />
+            </div>
+            <div className={styles["partners-card"]}>
+              <img src={houseLogoImg} alt="" />
+            </div>
+            <div className={styles["partners-card"]}>
+              <img src={fibrasulLogoImg} alt="" />
+            </div>
+          </div>
         </div>
       </section>
     </>

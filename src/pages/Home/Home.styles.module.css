@@ -32,6 +32,17 @@ p {
   display: flex;
 }
 
+.title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--green-700);
+}
+
+.subtitle {
+  font-size: 1.6rem;
+  color: var(--gray-300);
+}
+
 /* -- HEADER */
 .header {
   align-items: center;
@@ -60,10 +71,9 @@ p {
   width: 80rem;
 }
 
-/* -- INTRO */
+/* -- INTRO SECTION */
 .intro {
   height: 85vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -84,6 +94,47 @@ p {
   font-size: 2rem;
 }
 
-.intro .text-section + img { /* Notebook man Img */
-  
+.intro .text-section + img {
+  /* Notebook man Img */
+}
+
+.intro .backgroundObject {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  width: 50%;
+}
+
+/* -- PARTNERS SECTION */
+.partners.container {
+  background-color: var(--green-300);
+}
+
+.partners {
+  justify-content: center;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.partners .text-section {
+  text-align: center;
+}
+
+.partners-cards {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin: auto;
+}
+
+.partners-card {
+  max-width: 20rem;
+}
+
+.partners-card img {
+  width: 100%;
+  object-fit: cover;
 }
