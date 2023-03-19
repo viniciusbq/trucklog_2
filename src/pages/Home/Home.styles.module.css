@@ -229,3 +229,71 @@ p {
   border: 2px solid var(--green-500);
   border-radius: 2rem;
 }
+
+/* -- FORMS SECTION */
+.forms-section {
+  padding: 10rem 0;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+}
+
+.forms-section .text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.forms-section img {
+  width: 60%;
+}
+
+.forms-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  box-shadow: 0 0 10px 10px var(--green-300);
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 50rem;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 90%;
+}
+
+form label,
+form p {
+  font-size: 2rem;
+}
+
+form label i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 4px;
+  background-color: var(--green-500);
+  color: var(--white);
+}
+
+form > div input {
+  all: unset;
+  border: 1px solid var(--gray-300);
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+form > button {
+  margin: auto;
+}

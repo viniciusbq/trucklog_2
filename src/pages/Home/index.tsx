@@ -15,6 +15,8 @@ import pathIconImg from "../../assets/path-icon.svg";
 import gasIconImg from "../../assets/gas-pump-icon.svg";
 import cameraIconImg from "../../assets/video-camera-icon.svg";
 
+import formsPersonImg from "../../assets/forms-person.svg";
+
 export const Home = () => {
   return (
     <>
@@ -187,6 +189,55 @@ export const Home = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className={styles.container}>
+        <div className={styles["forms-section"] + " " + styles.content}>
+          <div className={styles["text-section"]}>
+            <div>
+              <h1 className={styles.title}>Se interessou?</h1>
+              <h2 className={styles.subtitle}>
+                Preencha o formulário e entraremos em contato.
+              </h2>
+            </div>
+            <img src={formsPersonImg} alt="" />
+          </div>
+
+          <form>
+            <div>
+              <label>
+                <i className="ph-user"></i>Seu nome
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Digite aqui seu nome"
+                required
+              />
+            </div>
+
+            <div>
+              <label>
+                <i className="ph-envelope"></i>Seu e-mail
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Digite aqui seu e-mail"
+                required
+              />
+            </div>
+
+            <p>
+              <input type="checkbox" /> Desejo receber emails sobre lançamentos
+              e correções do sistema
+            </p>
+
+            <button>Enviar</button>
+          </form>
         </div>
       </section>
     </>
