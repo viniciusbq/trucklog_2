@@ -17,6 +17,8 @@ import cameraIconImg from "../../assets/video-camera-icon.svg";
 
 import formsPersonImg from "../../assets/forms-person.svg";
 
+import snapFingerImg from "../../assets/easy-to-use-icon.png";
+
 export const Home = () => {
   return (
     <>
@@ -238,6 +240,67 @@ export const Home = () => {
 
             <button>Enviar</button>
           </form>
+        </div>
+      </section>
+
+      <section className={styles.benefits + " " + styles.container}>
+        <div className={styles.benefits + " " + styles.content}>
+          <div>
+            <h1 className={styles.title}>Principais Benefícios</h1>
+            <h2 className={styles.subtitle}>
+              O que a TruckLog pode agregar na sua empresa
+            </h2>
+          </div>
+          <div className={styles.grid}>
+            <div>
+              <img src={snapFingerImg} alt="" />
+              <h1>Facilidade</h1>
+              <p>
+                Com uma interface intuitiva e de fácil controle você ganha
+                tempo.
+              </p>
+            </div>
+            <div>
+              <i className="ph-shield-check"></i>
+              <h1>Segurança</h1>
+              <p>
+                Com o controle das frotas você monitora em tempo real seus
+                veículos.
+              </p>
+            </div>
+            <div>
+              <i className="ph-gear"></i>
+              <h1>Simplicidade</h1>
+              <p>
+                Recursos selecionados e pensandos minuciosamente para o seu
+                negócio.
+              </p>
+            </div>
+            <div>
+              <i className="ph-truck"></i>
+              <h1>Mobilidade</h1>
+              <p>
+                São inúmeros postos para abastecer e parceiros de mobilidade
+                para deslocamento e serviços.
+              </p>
+            </div>
+            <div>
+              <i className="ph-presentation-chart"></i>
+              <h1>Registros</h1>
+              <p>
+                Com gráficos e linhas do tempo você acompanha a evolução do seu
+                negócio.
+              </p>
+            </div>
+            <div>
+              <i className="ph-chart-line-up"></i>
+              <h1>Escalabilidade</h1>
+              <p>
+                O TruckLog facilita, promove segurança, praticidade, mobilidade
+                e acesso a registos para escalar o seu negócio.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </>

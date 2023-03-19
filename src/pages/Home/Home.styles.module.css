@@ -255,10 +255,15 @@ p {
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-  box-shadow: 0 0 10px 10px var(--green-300);
+  box-shadow: 0 0 2px 2px var(--green-300);
   border-radius: 1rem;
   padding: 2rem;
   max-width: 50rem;
+  transition: box-shadow 200ms;
+}
+
+.forms-section form:hover {
+  box-shadow: 0 0 5px 5px var(--green-300);
 }
 
 form div {
@@ -296,4 +301,42 @@ form > div input {
 
 form > button {
   margin: auto;
+}
+
+/* -- BENEFITS SECTION */
+.benefits.container {
+  background-color: var(--green-300);
+  text-align: center;
+}
+
+.benefits {
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 10rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem;
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40rem;
+  text-align: center;
+  gap: 2rem;
+}
+
+.grid div img,
+.grid div i {
+  font-size: 6rem;
+}
+
+.grid div p {
+  font-size: 1.8rem;
 }
