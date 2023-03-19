@@ -1,4 +1,5 @@
-import { Footer, Header } from "./components";
+import { Footer, Header } from './components';
+import React from 'react';
 
 export const Home = () => {
   return (

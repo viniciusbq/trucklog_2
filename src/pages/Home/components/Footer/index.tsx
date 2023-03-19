@@ -1,5 +1,5 @@
-export const Footer = () => {
-  return(
-    <h1>Footer</h1>
-  );
-}
+import React from 'react';
+
+export const Footer: React.FC = () => {
+  return <h1>Footer</h1>;
+};

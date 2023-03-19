@@ -1,0 +1,69 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 20rem;
+  margin: 1rem;
+}
+
+.title {
+  color: var(--green-700);
+  font-weight: bold;
+  padding-bottom: 5rem;
+}
+.subtitle {
+  margin-bottom: 2rem;
+}
+.dados {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.dados input {
+  width: 45rem;
+  line-height: 4rem;
+  font-size: medium;
+  border: 1px transparent;
+  border-radius: 14px;
+  box-shadow: 0 0 0px var(--black);
+  background-color: var(--gray-100);
+  transition: border 0.3s;
+  padding: 0.5rem 5rem;
+}
+input[type='email']:focus,
+input[type='password']:focus {
+  box-shadow: 0 0 15px var(--green-700);
+  outline: 0;
+}
+.img_truck {
+  width: 45.25rem;
+}
+.btn_par {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.paragrafo {
+  font-size: 1.8rem;
+}
+.btn {
+  background-color: var(--green-700);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 7px 20px;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background-color: var(--green-500);
+}
