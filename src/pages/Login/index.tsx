@@ -35,7 +35,7 @@ const Logar: React.FC = () => {
         throw response;
       })
       .then((data) => setUsers(data))
-      .catch((error) => console.error(error));
+      .catch((error) => '');
   }, []);
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();

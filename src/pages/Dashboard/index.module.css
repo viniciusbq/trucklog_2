@@ -1,0 +1,97 @@
+.bdy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  color: var(--white);
+  flex-wrap: wrap;
+  padding: 10rem;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.search_bar {
+  margin-top: 10rem;
+  margin-bottom: -3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.search {
+  border-radius: 10px;
+  width: 30rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  height: 5rem;
+}
+.btn_search {
+  background-color: var(--green-500);
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--white);
+  padding: 1rem;
+}
+.btn_search:hover {
+  background-color: var(--green-700);
+  color: #fff;
+}
+.card {
+  background-color: var(--green-500);
+  display: flex;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 1rem;
+  gap: 1rem;
+
+  border: 1px solid #000;
+}
+.name_email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.nome {
+  color: var(--white);
+  font-size: 3rem !important ;
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  background-color: var(--green-700);
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+.username {
+  border-right: 2px solid #fff;
+  padding-right: 3rem;
+
+  font-size: 1.5rem;
+  margin-top: -0.3125rem;
+  align-self: flex-end;
+}
+
+.email {
+  font-size: 1.5rem;
+}
+.company {
+  background-color: var(--green-700);
+  width: 100%;
+  padding: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.company_bs,
+.frase {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
