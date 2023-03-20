@@ -21,7 +21,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -43,6 +43,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Anybody", cursive;
-  font-weight: 700;
+  font-family: 'Anybody', cursive;
+  color: var(--green-700);
+}
+
+button {
+  border: none;
+  font-size: 1.7rem;
+  color: var(--green-700);
+}
+
+button:hover {
+  color: #3cbd96;
 }

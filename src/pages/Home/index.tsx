@@ -1,4 +1,6 @@
-import styles from "./Home.styles.module.css";
+import React from "react";
+
+import styles from "./Home.module.css";
 
 import logoImg from "../../assets/truck-log-logo.svg";
 import notebookManImg from "../../assets/notebook-man.svg";
@@ -18,8 +20,11 @@ import cameraIconImg from "../../assets/video-camera-icon.svg";
 import formsPersonImg from "../../assets/forms-person.svg";
 
 import snapFingerImg from "../../assets/easy-to-use-icon.png";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <header className={styles.container}>
@@ -37,7 +42,7 @@ export const Home = () => {
             <a href="#">Benefícios</a>
             <a href="#">FAQ</a>
           </nav>
-          <button>Faça Login</button>
+          <button onClick={() => navigate("/login")}>Faça Login</button>
         </div>
       </header>
 
@@ -307,16 +312,34 @@ export const Home = () => {
       <footer className={styles.container}>
         <div className={styles.footer + " " + styles.content}>
           <ul>
-            <li><a href="#">Benefícios</a></li>
-            <li><a href="#">Dados</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#"><img src={logoImg} alt="" /></a></li>
-            <li><a href="#">Parceiros</a></li>
-            <li><a href="#">Taxas</a></li>
-            <li><a href="#">Contrate</a></li>
+            <li>
+              <a href="#">Benefícios</a>
+            </li>
+            <li>
+              <a href="#">Dados</a>
+            </li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src={logoImg} alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#">Parceiros</a>
+            </li>
+            <li>
+              <a href="#">Taxas</a>
+            </li>
+            <li>
+              <a href="#">Contrate</a>
+            </li>
           </ul>
           <hr />
-          <p>2010 - 2022 <a href="#">Privacy - Terms</a></p>
+          <p>
+            2010 - 2022 <a href="#">Privacy - Terms</a>
+          </p>
         </div>
       </footer>
     </>
