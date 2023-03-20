@@ -32,8 +32,8 @@
   transition: border 0.3s;
   padding: 0.5rem 5rem;
 }
-input[type='email']:focus,
-input[type='password']:focus {
+input[type="email"]:focus,
+input[type="password"]:focus {
   box-shadow: 0 0 15px var(--green-700);
   outline: 0;
 }
@@ -66,4 +66,6 @@ input[type='password']:focus {
 }
 .btn:hover {
   background-color: var(--green-500);
+  /* font-family: "Anybody", cursive;
+  font-weight: 700; */
 }

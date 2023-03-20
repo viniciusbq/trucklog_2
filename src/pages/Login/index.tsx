@@ -1,8 +1,8 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import styles from './index.module.css';
-import Botao from './Button/index';
-import Cadastrar from './Cadastrar';
+import React from "react";
+import { useState, useEffect } from "react";
+import styles from "./index.module.css";
+import Botao from "./Button/index";
+import Cadastrar from "./Cadastrar";
 
 interface User {
   email: string;
@@ -10,24 +10,26 @@ interface User {
 }
 
 let userValid: User = {
-  email: '',
-  senha: '',
+  email: "",
+  senha: "",
 };
 
 const Logar: React.FC = () => {
   const [mostrarCadastro, setMostrarCadastro] = useState(false);
   const [showElement, setShowElement] = useState(false);
   const showOrHide = () => setShowElement(true);
+
   const handleMostrarCadastro = () => {
     setMostrarCadastro(true);
   };
-  const [email, setEmail] = useState<string>('');
-  const [password, setPassword] = useState<string>('');
+
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch("http://localhost:3000/users")
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -35,18 +37,19 @@ const Logar: React.FC = () => {
         throw response;
       })
       .then((data) => setUsers(data))
-      .catch((error) => '');
+      .catch((error) => "");
   }, []);
+
   const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
     e.preventDefault();
-    if (email === '') {
-      window.alert('Digite um E-mail!');
-    } else if (password === '') {
-      window.alert('Digite uma senha!');
+    if (email === "") {
+      window.alert("Digite um E-mail!");
+    } else if (password === "") {
+      window.alert("Digite uma senha!");
     } else {
       for (let i = 0; i < users.length; i++) {
         if (users[i].email === email && users[i].senha === password) {
-          console.log('login válido');
+          console.log("login válido");
           userValid = {
             email: users[i].email,
             senha: users[i].senha,
@@ -55,12 +58,12 @@ const Logar: React.FC = () => {
           let token =
             Math.random().toString(16).substring(2) +
             Math.random().toString(16).substring(2);
-          localStorage.setItem('token', token);
-          localStorage.setItem('userLogado', JSON.stringify(userValid));
-          window.location.href = '../index.html';
+          localStorage.setItem("token", token);
+          localStorage.setItem("userLogado", JSON.stringify(userValid));
+          window.location.href = "../index.html";
           break;
         } else {
-          alert('Email ou senha inválidos');
+          alert("Email ou senha inválidos");
         }
       }
     }
@@ -106,12 +109,12 @@ const Logar: React.FC = () => {
                 <input
                   type="submit"
                   className={styles.btn}
-                  value={'Entrar'}
+                  value={"Entrar"}
                   data-testid="submit-button"
                 />
               </div>
             </form>
-            <Botao event={handleMostrarCadastro} />
+            <Botao handleMostrarCadastro={handleMostrarCadastro} />
           </div>
         </div>
       )}

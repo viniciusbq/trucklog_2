@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
-import styles from './index.module.css';
-import Login from '../index';
-const Botao: React.FC = (props) => {
+import React from "react";
+import styles from "./index.module.css";
+
+interface IBotao {
+  handleMostrarCadastro: () => void;
+}
+
+const Botao = ({ handleMostrarCadastro }: IBotao) => {
   return (
     <>
-      <button className={styles.btn_contd} onClick={props.event}>
+      <button className={styles.btn_contd} onClick={handleMostrarCadastro}>
         Ainda não possui uma conta?
       </button>
     </>

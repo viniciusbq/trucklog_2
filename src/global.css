@@ -27,17 +27,14 @@
 a {
   all: unset;
   cursor: pointer;
+  color: inherit;
 }
 
 html {
   font-size: 62.5%;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  font-family: 'Red Hat Display', sans-serif;
-}
-
-body {
-  background-color: var(--background);
+  font-family: "Red Hat Display", sans-serif;
 }
 
 h1,
@@ -55,6 +52,7 @@ button {
   font-size: 1.7rem;
   color: var(--green-700);
 }
+
 button:hover {
   color: #3cbd96;
 }
