@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import styles from './index.module.css';
 import Botao from './Button/index';
 import Cadastrar from './Cadastrar';
-import Header from '../Home/components/Header';
 import Footer from '../Home/components/Footer';
 import logoImg from './assets/truck-log-logo.svg';
 
@@ -34,7 +33,7 @@ const Logar: React.FC = () => {
   const [users, setUsers] = useState<User[]>([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch('https://json-login-kappa.vercel.app/users')
       .then((response) => {
         if (response.ok) {
           return response.json();
@@ -94,7 +93,7 @@ const Logar: React.FC = () => {
         <div className={styles.container}>
           <div>
             <img
-              src="https://raw.githubusercontent.com/viniciusbq/trucklog/main/login/assets/truck.png"
+              src="https://raw.githubusercontent.com/viniciusbq/trucklog/main/src/assets/truck.png"
               alt="TruckLog"
               className={styles.img_truck}
             />

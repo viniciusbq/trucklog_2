@@ -32,7 +32,7 @@ const Cadastrar: React.FC = () => {
     if (user.nome !== '') {
       if (patternEmailRgx.test(user.email)) {
         if (patternPassRgx.test(user.senha)) {
-          fetch('http://localhost:3000/users', {
+          fetch('https://json-login-kappa.vercel.app/users', {
             method: 'POST',
             body: JSON.stringify(user),
             headers: {
